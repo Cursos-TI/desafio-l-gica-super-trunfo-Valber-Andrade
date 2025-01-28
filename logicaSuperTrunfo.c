@@ -87,63 +87,60 @@ int main() {
 
    switch (Jogador)
    {
+
    case 1:
       if (populacao1 > populacao2) {
-        printf("Cidade %s tem a maior população: %d \n", nome1, populacao1);
+         printf("Cidade %s tem a maior população: %d \n", nome1, populacao1);
         } else {
-        printf("Cidade %s tem a maior população: %d \n", nome2, populacao2);
+         printf("Cidade %s tem a maior população: %d \n", nome2, populacao2);
      }
       break;
+
    case 2:
       if (area1 > area2) {
-        printf("Cidade %s tem a maior area: %.2f \n", nome1, area1);
+         printf("Cidade %s tem a maior area: %.2f \n", nome1, area1);
         } else {
-        printf("Cidade %s tem a maior area: %.2f \n", nome2, area2);
+         printf("Cidade %s tem a maior area: %.2f \n", nome2, area2);
      }
       break;
+
    case 3:
       if (pib1 > pib2) {
-        printf("Cidade %s tem o maior pib: %.2f \n", nome1, pib1);
+         printf("Cidade %s tem o maior pib: %.2f \n", nome1, pib1);
         } else {
-        printf("Cidade %s tem o maior pib: %.2f \n", nome2, pib2);
+         printf("Cidade %s tem o maior pib: %.2f \n", nome2, pib2);
      }
       break;
+
    case 4:
       if (pontosturisticos1 > pontosturisticos2) {
-        printf("Cidade %s tem mais pontos turisticos: %d \n", nome1, pontosturisticos1);
+         printf("Cidade %s tem mais pontos turisticos: %d \n", nome1, pontosturisticos1);
         } else {
-        printf("Cidade %s tem mais pontos turisticos: %d \n", nome2, pontosturisticos2);
+         printf("Cidade %s tem mais pontos turisticos: %d \n", nome2, pontosturisticos2);
      }
       break;
       //Aplicando estrutura de condições aninhadas
+
    case 5:
-      if (populacao1 > populacao2 || area1 > area2) 
-      {
-         if (DensidadePopulacional1 < DensidadePopulacional2) 
-         {
-            printf("A cidade %s tem a melhor Densidade Populacional: %.2f \n", nome1, DensidadePopulacional1);
-         } else if (DensidadePopulacional1 > DensidadePopulacional2) 
-         {
-            printf("Cidade %s tem a melhor Densidade Populacional: %.2f \n", nome2, DensidadePopulacional2);
-         }
-
-
+      if (DensidadePopulacional1 > DensidadePopulacional2) {
+          printf("Cidade %s tem a maior Densidade Populacional: %.2f \n", nome1, DensidadePopulacional1);
+      } else if (DensidadePopulacional1 < DensidadePopulacional2) {
+         printf("Cidade %s tem a maior Densidade Populacional: %.2f \n", nome2, DensidadePopulacional2);
+      } else {
+         printf("As duas cidades possuem a mesma Densidade Populacional: %.2f \n", DensidadePopulacional1);
       }
       break;
+
    case 6:
-      if (pib1 > pib2 || populacao1 > populacao2)
-      {
-         if (PibPerCapita1 > PibPerCapita2)
-         {
-            printf("Cidade %s tem o maior pib per capita: %.2f \n", nome1, PibPerCapita1);
-         } else if (PibPerCapita1 < PibPerCapita2)
-         {
-            printf("Cidade %s tem o maior pib per capita: %.2f \n", nome2, PibPerCapita2);
-         }
-         
-         
+      if (PibPerCapita1 > PibPerCapita2){
+         printf("Cidade %s tem o maior pib per capita: %.2f \n", nome1, PibPerCapita1);
+      } else if (PibPerCapita1 > PibPerCapita2){
+         printf("Cidade %s tem o maior pib per capita: %.2f \n", nome2, PibPerCapita2);
+      } else {
+         printf("As duas cidades tem a mesma renda per capita %.2f \n", PibPerCapita1);
       }
-      break;  
+      break;
+
    case 7:
       if (SuperPoder1 > SuperPoder2) {
         printf("O Super Poder da Cidade %s é o maior: %.2f \n", nome1, SuperPoder1);
