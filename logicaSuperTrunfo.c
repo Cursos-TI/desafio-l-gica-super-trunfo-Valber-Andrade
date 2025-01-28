@@ -115,6 +115,7 @@ int main() {
         printf("Cidade %s tem mais pontos turisticos: %d \n", nome2, pontosturisticos2);
      }
       break;
+      //Aplicando estrutura de condições aninhadas
    case 5:
       if (populacao1 > populacao2 || area1 > area2) 
       {
